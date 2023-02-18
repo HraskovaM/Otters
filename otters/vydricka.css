@@ -1,0 +1,149 @@
+
+h1 {
+    color: rgb(7, 7, 110);
+    font-size: 20px;
+    font-family: 'Special Elite', cursive;
+    height: 30px;
+    margin: 0 auto;
+    position: relative;
+    top: 600px;
+}
+body {
+    height: 100%;
+}
+main {
+    width: 800px;
+    height: 100%;
+    position: relative;
+    margin: 0 auto;    
+    background-color: rgb(255, 255, 255);
+    background-image: url('pozadieeee.gif');
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+#domcek {
+    height: 160px;
+    width: 255px;
+    background-color: rgb(187, 90, 0);
+    display: inline-block ;
+    margin-left: 5px;
+    margin-top: 370px;
+    border: 5px solid burlywood;
+    border-radius: 10%;
+    text-align: center;
+    color: rgb(11, 9, 19);
+    font-weight: bold;
+    font-size: large;
+    position: relative;
+    text-align: center ;
+    z-index: 999;
+} 
+
+.vydra div {
+margin: 40px;
+display: inline-block;
+position: absolute;
+right: 30px;
+top: 420px;
+transition: right 4s;
+}
+
+.vydra:hover div {
+  right: 500px;
+ 
+}
+div:nth-of-type(1):hover {
+    transition-timing-function: ease-out;   
+}
+div:nth-of-type(2) {
+    transition-timing-function: cubic-bezier(0.23, 1, 0.320, 1);
+}
+div:nth-of-type(3) {
+    transition-timing-function: linear;
+}
+div:nth-of-type(4) {
+    transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+
+#swim {
+    position: absolute;
+    top: 400px;
+    right: 150px;
+    opacity: 0;
+}
+
+#swim:hover {
+opacity: 100;
+}
+
+.button-container-2 {
+    position: relative;
+    width: 175px;
+    height: 90px;
+    margin: 0 auto;
+    overflow: hidden;
+    border: 4px solid #000;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    transition: 0.5s;
+    letter-spacing: 1px;
+    border-radius: 8px;
+    right: 300px;
+    bottom: 570px;
+ 
+  }
+  .button-container-2 button {
+    width: 101%;
+    height: 100%;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 11px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    background: #000;
+    -webkit-mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/urban-sprite.png");
+    mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/urban-sprite.png");
+    -webkit-mask-size: 3000% 100%;
+    mask-size: 3000% 100%;
+    border: none;
+    color: #fff;
+    -webkit-animation: ani2 0.7s steps(29) forwards;
+    animation: ani2 0.7s steps(29) forwards;
+  }
+
+
+  .button-container-2 button:hover {
+    -webkit-animation: ani 0.7s steps(29) forwards;
+    animation: ani 0.7s steps(29) forwards;
+  }
+  
+  .mas {
+    position: absolute;
+    color: #000;
+    text-align: center;
+    width: 101%;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    position: absolute;
+    font-size: 30px;
+    margin-top: 17px;
+    overflow: hidden;
+    font-weight: bold;
+  }
+  
+  @-webkit-keyframes ani {
+    from {
+      -webkit-mask-position: 0 0;
+      mask-position: 0 0;
+    }
+    to {
+      -webkit-mask-position: 100% 0;
+      mask-position: 100% 0;
+    }
+  }
+
+footer img {
+    width: 30%;
+    margin: calc(10%/6);
+  }
